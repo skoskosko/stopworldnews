@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "stopworldnews",
+  "version": "1.2",
+
+  "description": "Adds rustle warning on r worldnews",
+
+  "icons": {
+    "48": "icons/48.png",
+    "96": "icons/96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/r/worldnews/comments/*"],
+      "js": ["scripts.js"]
+
+    }
+  ],
+  "web_accessible_resources": [
+   "icons/leave.png"
+ ]
+
+}
